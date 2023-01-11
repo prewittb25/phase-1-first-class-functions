@@ -1,11 +1,28 @@
 
-function receivesAFunction(spy){
-    console.log(spy());
+
+function receivesAFunction(spy) {
+
+    spy();
+
 }
 
 
 
-function returnsANamedFunction(){
-    return "named function";
-}
-   
+function returnsANamedFunction() {
+
+    return function name() {
+
+        return "name"
+    };
+    }
+
+
+    
+    function returnsAnAnonymousFunction() {
+
+        return function() {
+
+            console.log("anonymous has no name");
+        }
+    }
+
